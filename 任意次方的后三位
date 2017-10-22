@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main(void)
+{
+	int i = 0,j=0;
+	int num1, num2, result=1;
+	printf("请输入两个整数：a和b,(a^b)\n");
+	scanf("%d%d",&num1,&num2);
+	for (i = 0; i < num2; i++)
+		result = result*num1;
+    	result= result % 1000;
+	if (result > 100)
+		printf("%d^%d的最后三位是:%d\n", num1, num2, result);
+	else
+		printf("%d^%d的最后三位:；0%d\n", num1, num2, result);
+	return 0;
+}
